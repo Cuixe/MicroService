@@ -3,17 +3,14 @@ version '1.0-SNAPSHOT'
 
 apply plugin: 'java'
 
-sourceCompatibility = 1.5
-
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    compile 'org.springframework.cloud:spring-cloud-config-server:1.1.1.RELEASE',
-            'org.springframework.boot:spring-boot-starter-undertow:1.5.1.RELEASE',
+    compile 'org.springframework.boot:spring-boot-starter-undertow:1.5.1.RELEASE',
             'org.springframework.boot:spring-boot-starter-actuator:1.5.1.RELEASE',
+            'org.springframework.boot:spring-boot-starter-web:1.5.1.RELEASE',
             'io.springfox:springfox-swagger2:2.4.0',
             'io.springfox:springfox-swagger-ui:2.4.0'
-    compile("org.springframework.boot:spring-boot-starter-web:1.5.1.RELEASE")
 }
